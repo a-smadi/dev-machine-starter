@@ -1,0 +1,1 @@
+A script to help get things up and running for a fresh installation of Ubuntu
