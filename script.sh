@@ -66,7 +66,7 @@ echo -e "${RED}installing favorites...${NOCOLOR}"
 sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && sudo chmod a+x /usr/local/bin/youtube-dl && hash -r -y
 sudo add-apt-repository -y ppa:videolan/stable-daily && sudo apt-get update -y && sudo apt-get install vlc -y
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp && sudo apt-get update -y && sudo apt-get install gimp -y
-sudo add-apt-repository -y ppa:eugenesan/ppa && sudo apt-get update -y && sudo apt-get install keepassx
+sudo add-apt-repository -y ppa:eugenesan/ppa && sudo apt-get update -y && sudo apt-get install keepassx -y
 sudo apt-get install gimp-data -y
 sudo apt-get install gimp-plugin-registry -y
 sudo apt-get install gimp-data-extras -y
@@ -89,7 +89,7 @@ sudo apt-get install git -y
 sudo apt-get install autoconf -y; sudo apt-get install bison -y; sudo apt-get install build-essential -y; sudo apt-get install libssl-dev -y; sudo apt-get install libyaml-dev -y; sudo apt-get install libreadline6-dev -y; sudo apt-get install zlib1g-dev -y; sudo apt-get install libncurses5-dev -y; sudo apt-get install libffi-dev -y; sudo apt-get install libgdbm3 -y; sudo apt-get install libgdbm-dev -y; sudo rm -rf ~/.rbenv && git clone https://github.com/rbenv/rbenv.git ~/.rbenv && echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc && echo 'eval "$(rbenv init -)"' >> ~/.bashrc && source ~/.bashrc
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 rbenv install 2.4.1 && rbenv global 2.4.1 && rbenv rehash
-sudo apt-get install redis-server
+sudo apt-get install redis-server -y
 sudo apt-get install terminator -y
 sudo apt-get install screenruler -y
 sudo apt-get install gedit-developer-plugins -y
