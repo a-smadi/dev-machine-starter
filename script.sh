@@ -74,7 +74,6 @@ sudo apt-get install gedit-plugins -y
 sudo apt-get install testdisk -y
 sudo apt-get install tomboy -y
 sudo apt-get install audacity -y
-sudo apt-get install variety -y
 sudo apt-get install figlet -y
 sudo apt-get install xcowsay -y
 sudo apt-get install cheese -y
