@@ -105,6 +105,7 @@ sudo apt-get install vim -y
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 sudo apt-get install tmux -y
 sudo apt-get install redshift -y
+sudo apt-get install links2 -y
 
 echo -e "${RED}installing gems...${NOCOLOR}"
 gem install bundler
