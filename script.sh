@@ -80,6 +80,7 @@ sudo apt-get install cheese -y
 sudo apt-get install darktabke -y
 sudo apt-get install unity-tweak-tool -y
 sudo apt-get install libxss1 -y; sudo apt-get install libappindicator1 -y; sudo apt-get install libindicator7 -y; sudo apt-get install -f; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb && sudo dpkg -i chrome.deb; rm chrome.deb
+wget https://repo.skype.com/latest/skypeforlinux-64.deb -O skype.deb && sudo dpkg -i skype.deb; rm skype.deb
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
 sudo add-apt-repository -y ppa:webupd8team/java && sudo apt-get update -y && sudo apt-get install oracle-java8-installer -y
