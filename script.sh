@@ -109,21 +109,10 @@ sudo apt-get install redshift -y
 sudo apt-get install links2 -y
 sudo apt-get install ntop -y
 
+#should be modified, since gems will fail to install without a terminal restart, after rbenv was just installed
 echo -e "${RED}installing gems...${NOCOLOR}"
 gem install bundler
 gem install rails
-gem install cancancan
-gem install devise
-gem install redis-rails
-gem install better_errors
-gem install delayed_job
-gem install letter_opener
-gem install mina
-gem install paperclip
-gem install simple_form
-gem install rspec-rails
-gem install factory_girl_rails
-gem install pry-rails
 
 echo -e "${RED}cleaning up...${NOCOLOR}"
 sudo apt-get -f install -y
