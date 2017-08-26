@@ -88,7 +88,7 @@ wget http://aprelium.com/data/abwsx1.tgz -O abwsx1.tgz && tar -xf abwsx1.tgz -C 
 sudo apt-get install git -y
 sudo apt-get install autoconf -y; sudo apt-get install bison -y; sudo apt-get install build-essential -y; sudo apt-get install libssl-dev -y; sudo apt-get install libyaml-dev -y; sudo apt-get install libreadline6-dev -y; sudo apt-get install zlib1g-dev -y; sudo apt-get install libncurses5-dev -y; sudo apt-get install libffi-dev -y; sudo apt-get install libgdbm3 -y; sudo apt-get install libgdbm-dev -y; sudo rm -rf ~/.rbenv && git clone https://github.com/rbenv/rbenv.git ~/.rbenv && echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc && echo 'eval "$(rbenv init -)"' >> ~/.bashrc && source ~/.bashrc
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-rbenv install 2.4.1 && rbenv global 2.4.1 && rbenv rehash
+rbenv install 2.4.1 && rbenv global 2.4.1 && rbenv rehash && install libpq-dev -y
 sudo apt-get install redis-server -y
 sudo apt-get install terminator -y
 sudo apt-get install screenruler -y
@@ -108,7 +108,7 @@ sudo apt-get install tmux -y
 sudo apt-get install redshift -y
 sudo apt-get install links2 -y
 sudo apt-get install ntop -y
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' && wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add - && sudo apt-get update -y && sudo apt-get install postgresql -y && sudo apt-get install postgresql-contrib -y; sudo apt-get install libpq-dev -y
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' && wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add - && sudo apt-get update -y && sudo apt-get install postgresql -y && sudo apt-get install postgresql-contrib -y
 sudo apt-get install nodejs -y
 
 #should be modified, since gems will fail to install without a terminal restart, after rbenv was just installed
