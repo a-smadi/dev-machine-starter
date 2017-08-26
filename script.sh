@@ -108,7 +108,8 @@ sudo apt-get install tmux -y
 sudo apt-get install redshift -y
 sudo apt-get install links2 -y
 sudo apt-get install ntop -y
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' && wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add - && sudo apt-get update -y && sudo apt-get install postgresql -y && sudo apt-get install postgresql-contrib -y
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' && wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add - && sudo apt-get update -y && sudo apt-get install postgresql -y && sudo apt-get install postgresql-contrib -y; sudo apt-get install libpq-dev -y
+sudo apt-get install nodejs -y
 
 #should be modified, since gems will fail to install without a terminal restart, after rbenv was just installed
 echo -e "${RED}installing gems...${NOCOLOR}"
