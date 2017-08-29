@@ -115,6 +115,7 @@ sudo apt-get install nodejs -y
 echo -e "${RED}installing gems...${NOCOLOR}"
 gem install bundler
 gem install rails
+gem install rspec
 
 echo -e "${RED}cleaning up...${NOCOLOR}"
 sudo apt-get -f install -y
