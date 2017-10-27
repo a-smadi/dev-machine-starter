@@ -3,6 +3,7 @@ NOCOLOR='\033[0m'
 
 sudo echo -e "${RED}altering initial preferences...${NOCOLOR}"
 gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
+sudo apt-get purge nautilus -y
 
 echo -e "${RED}removing unwanted software...${NOCOLOR}"
 sudo apt-get purge -y thunderbird
@@ -61,6 +62,7 @@ sudo apt-get install xbacklight -y
 sudo apt-get install gstreamer1.0-libav -y
 sudo apt-get install ffmpeg -y
 sudo apt-get install whois -y
+sudo apt-get install thunar xfdesktop4 -y
 
 echo -e "${RED}installing favorites...${NOCOLOR}"
 sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && sudo chmod a+x /usr/local/bin/youtube-dl && hash -r -y
@@ -79,6 +81,7 @@ sudo apt-get install darktabke -y
 sudo apt-get install unity-tweak-tool -y
 sudo apt-get install libxss1 -y; sudo apt-get install libappindicator1 -y; sudo apt-get install libindicator7 -y; sudo apt-get install -f; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb && sudo dpkg -i chrome.deb; rm chrome.deb
 wget https://repo.skype.com/latest/skypeforlinux-64.deb -O skype.deb && sudo dpkg -i skype.deb; rm skype.deb
+sudo apt-get install zsh
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
 sudo add-apt-repository -y ppa:webupd8team/java && sudo apt-get update -y && sudo apt-get install oracle-java8-installer -y
