@@ -5,107 +5,107 @@ sudo echo -e "${RED}altering initial preferences...${NOCOLOR}"
 gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
 
 echo -e "${RED}removing unwanted software...${NOCOLOR}"
-sudo apt-get purge -y thunderbird
+sudo apt purge -y thunderbird
 
 echo -e "${RED}updating and upgrading...${NOCOLOR}"
-sudo apt-get update -y
-sudo apt-get upgrade -y
-sudo apt-get dist-upgrade -y
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt full-upgrade -y
 
 echo -e "${RED}installing essentials...${NOCOLOR}"
-sudo apt-get install synaptic -y
-sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager && sudo apt-get update -y && sudo apt-get install y-ppa-manager -y
-sudo apt-get install unace -y
-sudo apt-get install unrar -y
-sudo apt-get install zip -y
-sudo apt-get install unzip -y
-sudo apt-get install p7zip-full -y
-sudo apt-get install p7zip-rar -y
-sudo apt-get install sharutils -y
-sudo apt-get install rar -y
-sudo apt-get install uudeview -y
-sudo apt-get install mpack -y
-sudo apt-get install arj -y
-sudo apt-get install cabextract -y
-sudo apt-get install file-roller -y
-sudo apt-get install mencoder -y
-sudo apt-get install flac -y
-sudo apt-get install faac -y
-sudo apt-get install faad -y
-sudo apt-get install sox -y
-sudo apt-get install ffmpeg2theora -y
-sudo apt-get install libmpeg2-4 -y
-sudo apt-get install uudeview -y
-sudo apt-get install mpeg3-utils -y
-sudo apt-get install mpegdemux -y
-sudo apt-get install liba52-dev -y
-sudo apt-get install mpeg2dec -y
-sudo apt-get install vorbis-tools -y
-sudo apt-get install id3v2 -y
-sudo apt-get install mpg321 -y
-sudo apt-get install mpg123 -y
-sudo apt-get install libflac++6 -y
-sudo apt-get install totem-mozilla -y
-sudo apt-get install icedax -y
-sudo apt-get install lame -y
-sudo apt-get install libmad0 -y
-sudo apt-get install libjpeg-progs -y
-sudo apt-get install libdvdcss2 -y
-sudo apt-get install libdvdread4 -y
-sudo apt-get install libdvdnav4 -y
-sudo apt-get install libswscale-extra-2 -y
-sudo apt-get install ubuntu-restricted-extras -y
-sudo apt-get install gparted -y
-sudo apt-get install lm-sensors -y
-sudo apt-get install xbacklight -y
-sudo apt-get install gstreamer1.0-libav -y
-sudo apt-get install ffmpeg -y
-sudo apt-get install whois -y
+sudo apt install synaptic -y
+sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager && sudo apt update -y && sudo apt install y-ppa-manager -y
+sudo apt install unace -y
+sudo apt install unrar -y
+sudo apt install zip -y
+sudo apt install unzip -y
+sudo apt install p7zip-full -y
+sudo apt install p7zip-rar -y
+sudo apt install sharutils -y
+sudo apt install rar -y
+sudo apt install uudeview -y
+sudo apt install mpack -y
+sudo apt install arj -y
+sudo apt install cabextract -y
+sudo apt install file-roller -y
+sudo apt install mencoder -y
+sudo apt install flac -y
+sudo apt install faac -y
+sudo apt install faad -y
+sudo apt install sox -y
+sudo apt install ffmpeg2theora -y
+sudo apt install libmpeg2-4 -y
+sudo apt install uudeview -y
+sudo apt install mpeg3-utils -y
+sudo apt install mpegdemux -y
+sudo apt install liba52-dev -y
+sudo apt install mpeg2dec -y
+sudo apt install vorbis-tools -y
+sudo apt install id3v2 -y
+sudo apt install mpg321 -y
+sudo apt install mpg123 -y
+sudo apt install libflac++6 -y
+sudo apt install totem-mozilla -y
+sudo apt install icedax -y
+sudo apt install lame -y
+sudo apt install libmad0 -y
+sudo apt install libjpeg-progs -y
+sudo apt install libdvdcss2 -y
+sudo apt install libdvdread4 -y
+sudo apt install libdvdnav4 -y
+sudo apt install libswscale-extra-2 -y
+sudo apt install ubuntu-restricted-extras -y
+sudo apt install gparted -y
+sudo apt install lm-sensors -y
+sudo apt install xbacklight -y
+sudo apt install gstreamer1.0-libav -y
+sudo apt install ffmpeg -y
+sudo apt install whois -y
 
 echo -e "${RED}installing favorites...${NOCOLOR}"
 sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && sudo chmod a+x /usr/local/bin/youtube-dl && hash -r -y
-sudo add-apt-repository ppa:paulo-miguel-dias/pkppa -y && sudo apt-get update -y && sudo apt-get install libgles1-mesa -y; sudo apt-get install libgles2-mesa -y && sudo add-apt-repository -y ppa:videolan/stable-daily && sudo apt-get update -y && sudo apt-get install vlc -y
-sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp && sudo apt-get update -y && sudo apt-get install gimp -y
-sudo add-apt-repository -y ppa:eugenesan/ppa && sudo apt-get update -y && sudo apt-get install keepassx -y
-sudo apt-get install gimp-data -y
-sudo apt-get install gimp-plugin-registry -y
-sudo apt-get install gimp-data-extras -y
-sudo apt-get install testdisk -y
-sudo apt-get install audacity -y
-sudo apt-get install figlet -y
-sudo apt-get install xcowsay -y
-sudo apt-get install cheese -y
-sudo apt-get install darktabke -y
-sudo apt-get install unity-tweak-tool -y
-sudo apt-get install libxss1 -y; sudo apt-get install libappindicator1 -y; sudo apt-get install libindicator7 -y; sudo apt-get install -f; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb && sudo dpkg -i chrome.deb; rm chrome.deb
+sudo add-apt-repository ppa:paulo-miguel-dias/pkppa -y && sudo apt update -y && sudo apt install libgles1-mesa -y; sudo apt install libgles2-mesa -y && sudo add-apt-repository -y ppa:videolan/stable-daily && sudo apt update -y && sudo apt install vlc -y
+sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp && sudo apt update -y && sudo apt install gimp -y
+sudo add-apt-repository -y ppa:eugenesan/ppa && sudo apt update -y && sudo apt install keepassx -y
+sudo apt install gimp-data -y
+sudo apt install gimp-plugin-registry -y
+sudo apt install gimp-data-extras -y
+sudo apt install testdisk -y
+sudo apt install audacity -y
+sudo apt install figlet -y
+sudo apt install xcowsay -y
+sudo apt install cheese -y
+sudo apt install darktabke -y
+sudo apt install unity-tweak-tool -y
+sudo apt install libxss1 -y; sudo apt install libappindicator1 -y; sudo apt install libindicator7 -y; sudo apt install -f; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb && sudo dpkg -i chrome.deb; rm chrome.deb
 wget https://repo.skype.com/latest/skypeforlinux-64.deb -O skype.deb && sudo dpkg -i skype.deb; rm skype.deb
-sudo apt-get install zsh
+sudo apt install zsh
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
-sudo add-apt-repository -y ppa:webupd8team/java && sudo apt-get update -y && sudo apt-get install oracle-java8-installer -y
+sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update -y && sudo apt install oracle-java8-installer -y
 wget http://aprelium.com/data/abwsx1.tgz -O abwsx1.tgz && tar -xf abwsx1.tgz -C ~/; rm abwsx1.tgz
-sudo apt-get install git -y
-sudo apt-get install redis-server -y
-sudo apt-get install terminator -y
-sudo apt-get install screenruler -y
-sudo apt-get install bless -y
-sudo apt-get install tig -y
-sudo apt-get install htop -y
-sudo apt-get install nmap -y
-sudo apt-get install wireshark -y
-sudo apt-get install gpp -y
+sudo apt install git -y
+sudo apt install redis-server -y
+sudo apt install terminator -y
+sudo apt install screenruler -y
+sudo apt install bless -y
+sudo apt install tig -y
+sudo apt install htop -y
+sudo apt install nmap -y
+sudo apt install wireshark -y
+sudo apt install gpp -y
 wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz -O noip.tar.gz && tar xf noip.tar.gz && sudo mv noip-*/binaries/noip2-x86_64 /usr/local/bin/noip2; sudo chmod +x /usr/local/bin/noip2; rm -rf noip-*; rm noip.tar.gz
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - && echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list && sudo apt-get update -y; sudo apt-get install sublime-text -y
-sudo apt-get install vim -y
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - && echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list && sudo apt update -y; sudo apt install sublime-text -y
+sudo apt install vim -y
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-sudo apt-get install tmux -y
-sudo apt-get install redshift -y
-sudo apt-get install links2 -y
-sudo apt-get install ntop -y
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' && wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add - && sudo apt-get update -y && sudo apt-get install postgresql -y && sudo apt-get install postgresql-contrib -y
-sudo apt-get install nodejs -y
+sudo apt install tmux -y
+sudo apt install redshift -y
+sudo apt install links2 -y
+sudo apt install ntop -y
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' && wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add - && sudo apt update -y && sudo apt install postgresql -y && sudo apt install postgresql-contrib -y
+sudo apt install nodejs -y
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-sudo apt-get install autoconf -y; sudo apt-get install bison -y; sudo apt-get install build-essential -y; sudo apt-get install libssl-dev -y; sudo apt-get install libyaml-dev -y; sudo apt-get install libreadline6-dev -y; sudo apt-get install zlib1g-dev -y; sudo apt-get install libncurses5-dev -y; sudo apt-get install libffi-dev -y; sudo apt-get install libgdbm3 -y; sudo apt-get install libgdbm-dev -y; sudo rm -rf ~/.rbenv && git clone https://github.com/rbenv/rbenv.git ~/.rbenv && echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc && echo 'eval "$(rbenv init -)"' >> ~/.bashrc && source ~/.bashrc
+sudo apt install autoconf -y; sudo apt install bison -y; sudo apt install build-essential -y; sudo apt install libssl-dev -y; sudo apt install libyaml-dev -y; sudo apt install libreadline6-dev -y; sudo apt install zlib1g-dev -y; sudo apt install libncurses5-dev -y; sudo apt install libffi-dev -y; sudo apt install libgdbm3 -y; sudo apt install libgdbm-dev -y; sudo rm -rf ~/.rbenv && git clone https://github.com/rbenv/rbenv.git ~/.rbenv && echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc && echo 'eval "$(rbenv init -)"' >> ~/.bashrc && source ~/.bashrc
 gnome-terminal -e "rbenv install 2.4.1 && rbenv global 2.4.1 && rbenv rehash && install libpq-dev -y"
 
 echo -e "${RED}installing gems...${NOCOLOR}"
@@ -114,9 +114,9 @@ gnome-terminal -e "gem install rails"
 gnome-terminal -e "gem install rspec"
 
 echo -e "${RED}cleaning up...${NOCOLOR}"
-sudo apt-get -f install -y
-sudo apt-get autoremove -y
-sudo apt-get -y autoclean -y
-sudo apt-get -y clean
+sudo apt -f install -y
+sudo apt autoremove -y
+sudo apt -y autoclean -y
+sudo apt -y clean
 
 echo -e "${RED}all good !${NOCOLOR}"
