@@ -105,14 +105,12 @@ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`
 sudo apt-get install nodejs -y
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 sudo apt-get install autoconf -y; sudo apt-get install bison -y; sudo apt-get install build-essential -y; sudo apt-get install libssl-dev -y; sudo apt-get install libyaml-dev -y; sudo apt-get install libreadline6-dev -y; sudo apt-get install zlib1g-dev -y; sudo apt-get install libncurses5-dev -y; sudo apt-get install libffi-dev -y; sudo apt-get install libgdbm3 -y; sudo apt-get install libgdbm-dev -y; sudo rm -rf ~/.rbenv && git clone https://github.com/rbenv/rbenv.git ~/.rbenv && echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc && echo 'eval "$(rbenv init -)"' >> ~/.bashrc && source ~/.bashrc
-# <TO-DO> should be modified, since ruby will fail to install without a terminal restart, after rbenv was just installed
-rbenv install 2.4.1 && rbenv global 2.4.1 && rbenv rehash && install libpq-dev -y
+gnome-terminal -e "rbenv install 2.4.1 && rbenv global 2.4.1 && rbenv rehash && install libpq-dev -y"
 
-# <TO-DO> should be modified, since gems will fail to install without a terminal restart, after rbenv was just installed
 echo -e "${RED}installing gems...${NOCOLOR}"
-gem install bundler
-gem install rails
-gem install rspec
+gnome-terminal -e "gem install bundler"
+gnome-terminal -e "gem install rails"
+gnome-terminal -e "gem install rspec"
 
 echo -e "${RED}cleaning up...${NOCOLOR}"
 sudo apt-get -f install -y
