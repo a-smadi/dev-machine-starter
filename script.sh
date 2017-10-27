@@ -3,7 +3,6 @@ NOCOLOR='\033[0m'
 
 sudo echo -e "${RED}altering initial preferences...${NOCOLOR}"
 gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
-sudo apt-get purge nautilus -y
 
 echo -e "${RED}removing unwanted software...${NOCOLOR}"
 sudo apt-get purge -y thunderbird
@@ -62,7 +61,6 @@ sudo apt-get install xbacklight -y
 sudo apt-get install gstreamer1.0-libav -y
 sudo apt-get install ffmpeg -y
 sudo apt-get install whois -y
-sudo apt-get install thunar xfdesktop4 -y
 
 echo -e "${RED}installing favorites...${NOCOLOR}"
 sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && sudo chmod a+x /usr/local/bin/youtube-dl && hash -r -y
