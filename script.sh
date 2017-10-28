@@ -63,7 +63,7 @@ sudo apt install ffmpeg -y
 sudo apt install whois -y
 
 echo -e "${RED}installing favorites...${NOCOLOR}"
-sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && sudo chmod a+x /usr/local/bin/youtube-dl && hash -r -y
+sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && chmod a+x /usr/local/bin/youtube-dl && hash -r -y
 sudo add-apt-repository ppa:paulo-miguel-dias/pkppa -y && sudo apt update -y && sudo apt install libgles1-mesa -y; sudo apt install libgles2-mesa -y && sudo add-apt-repository -y ppa:videolan/stable-daily && sudo apt update -y && sudo apt install vlc -y
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp && sudo apt update -y && sudo apt install gimp -y
 sudo add-apt-repository -y ppa:eugenesan/ppa && sudo apt update -y && sudo apt install keepassx -y
@@ -94,7 +94,7 @@ sudo apt install htop -y
 sudo apt install nmap -y
 sudo apt install wireshark -y
 sudo apt install gpp -y
-wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz -O noip.tar.gz && tar xf noip.tar.gz && sudo mv noip-*/binaries/noip2-x86_64 /usr/local/bin/noip2; sudo chmod +x /usr/local/bin/noip2; rm -rf noip-*; rm noip.tar.gz
+wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz -O noip.tar.gz && tar xf noip.tar.gz && sudo mv noip-*/binaries/noip2-x86_64 /usr/local/bin/noip2; chmod +x /usr/local/bin/noip2; rm -rf noip-*; rm noip.tar.gz
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - && echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list && sudo apt update -y; sudo apt install sublime-text -y
 sudo apt install vim -y
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
