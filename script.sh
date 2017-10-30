@@ -112,6 +112,7 @@ echo -e "${RED}installing gems...${NOCOLOR}"
 gnome-terminal -e "gem install bundler"
 gnome-terminal -e "gem install rails"
 gnome-terminal -e "gem install rspec"
+gnome-terminal -y "gem install rubocop"
 
 echo -e "${RED}cleaning up...${NOCOLOR}"
 sudo apt -f install -y
