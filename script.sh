@@ -61,6 +61,7 @@ sudo apt install xbacklight -y
 sudo apt install gstreamer1.0-libav -y
 sudo apt install ffmpeg -y
 sudo apt install whois -y
+sudo apt install curl -y
 
 echo -e "${RED}installing favorites...${NOCOLOR}"
 sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && chmod a+x /usr/local/bin/youtube-dl && hash -r -y
@@ -79,7 +80,6 @@ sudo apt install darktabke -y
 sudo apt install unity-tweak-tool -y
 sudo apt install libxss1 -y; sudo apt install libappindicator1 -y; sudo apt install libindicator7 -y; sudo apt install -f; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb && sudo dpkg -i chrome.deb; rm chrome.deb
 wget https://repo.skype.com/latest/skypeforlinux-64.deb -O skype.deb && sudo dpkg -i skype.deb; rm skype.deb
-sudo apt install zsh -y && chsh -s $(which zsh)
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
 sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update -y && sudo apt install oracle-java8-installer -y
