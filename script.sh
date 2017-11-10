@@ -61,7 +61,6 @@ sudo apt install xbacklight -y
 sudo apt install gstreamer1.0-libav -y
 sudo apt install ffmpeg -y
 sudo apt install whois -y
-sudo apt install curl -y
 
 echo -e "${RED}installing favorites...${NOCOLOR}"
 sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && chmod a+x /usr/local/bin/youtube-dl && hash -r -y
@@ -90,6 +89,8 @@ sudo apt install terminator -y
 sudo apt install screenruler -y
 sudo apt install bless -y
 sudo apt install tig -y
+sudo apt install curl -y
+sudo apt install colordiff -y
 sudo apt install htop -y
 sudo apt install nmap -y
 sudo apt install wireshark -y
