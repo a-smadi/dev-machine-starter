@@ -96,7 +96,7 @@ sudo apt install iotop -y
 sudo apt install htop -y
 sudo apt install nmap -y
 sudo apt install wireshark -y
-sudo apt install gpp -y
+sudo apt install g++ -y
 sudo apt install xdotool -y
 wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz -O noip.tar.gz && tar xf noip.tar.gz && sudo mv noip-*/binaries/noip2-x86_64 /usr/local/bin/noip2; chmod +x /usr/local/bin/noip2; rm -rf noip-*; rm noip.tar.gz
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - && echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list && sudo apt update -y; sudo apt install sublime-text -y
@@ -110,6 +110,8 @@ sudo apt install nodejs -y
 sudo apt install autoconf -y; sudo apt install bison -y; sudo apt install build-essential -y; sudo apt install libssl-dev -y; sudo apt install libyaml-dev -y; sudo apt install libreadline6-dev -y; sudo apt install zlib1g-dev -y; sudo apt install libncurses5-dev -y; sudo apt install libffi-dev -y; sudo apt install libgdbm3 -y; sudo apt install libgdbm-dev -y; sudo rm -rf ~/.rbenv && git clone https://github.com/rbenv/rbenv.git ~/.rbenv && echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc && echo 'eval "$(rbenv init -)"' >> ~/.bashrc && source ~/.bashrc
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 # TODO: add a command to restart the terminal emulator here, as we already restarted bash, and the following commands will fail to execute
+echo -e "${RED}restart terminal, and run again...${NOCOLOR}"
+exit
 rbenv install 2.4.1 && rbenv global 2.4.1 && rbenv rehash && install libpq-dev -y
 
 echo -e "${RED}installing gems...${NOCOLOR}"
