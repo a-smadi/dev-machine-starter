@@ -109,17 +109,13 @@ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`
 sudo apt install nodejs -y
 sudo apt install autoconf -y; sudo apt install bison -y; sudo apt install build-essential -y; sudo apt install libssl-dev -y; sudo apt install libyaml-dev -y; sudo apt install libreadline6-dev -y; sudo apt install zlib1g-dev -y; sudo apt install libncurses5-dev -y; sudo apt install libffi-dev -y; sudo apt install libgdbm3 -y; sudo apt install libgdbm-dev -y; sudo rm -rf ~/.rbenv && git clone https://github.com/rbenv/rbenv.git ~/.rbenv && echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc && echo 'eval "$(rbenv init -)"' >> ~/.bashrc && source ~/.bashrc
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-
-rbenv=$HOME/.rbenv/bin/rbenv
-gem=$HOME/.rbenv/shims/gem
-
-$rbenv install 2.4.1 && $rbenv global 2.4.1 && $rbenv rehash && sudo apt install libpq-dev -y
+$HOME/.rbenv/bin/rbenv install 2.4.1 && $HOME/.rbenv/bin/rbenv global 2.4.1 && $HOME/.rbenv/bin/rbenv rehash && sudo apt install libpq-dev -y
 
 echo -e "${RED}installing gems...${NOCOLOR}"
-$gem install bundler
-$gem install rails
-$gem install rspec
-$gem install rubocop
+$HOME/.rbenv/shims/gem install bundler
+$HOME/.rbenv/shims/gem install rails
+$HOME/.rbenv/shims/gem install rspec
+$HOME/.rbenv/shims/gem install rubocop
 
 echo -e "${RED}cleaning up...${NOCOLOR}"
 sudo apt -f install -y
