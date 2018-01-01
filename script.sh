@@ -113,7 +113,7 @@ echo -e "${RED}restart terminal, and run again...${NOCOLOR}"
 
 exec bash
 
-rbenv install 2.4.1 && rbenv global 2.4.1 && rbenv rehash && install libpq-dev -y
+rbenv install 2.4.1 && rbenv global 2.4.1 && rbenv rehash && sudo apt install libpq-dev -y
 
 echo -e "${RED}installing gems...${NOCOLOR}"
 gem install bundler
