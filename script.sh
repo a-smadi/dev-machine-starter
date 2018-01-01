@@ -54,7 +54,6 @@ sudo apt install libdvdread4 -y
 sudo apt install libdvdnav4 -y
 sudo apt install libswscale-extra-2 -y
 sudo apt install ubuntu-restricted-extras -y
-sudo apt install gparted -y
 sudo apt install lm-sensors -y
 sudo apt install xbacklight -y
 sudo apt install gstreamer1.0-libav -y
@@ -62,10 +61,11 @@ sudo apt install ffmpeg -y
 sudo apt install whois -y
 
 echo -e "${RED}installing favorites...${NOCOLOR}"
+sudo apt install gparted -y
 sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && chmod a+x /usr/local/bin/youtube-dl && hash -r -y
 sudo add-apt-repository ppa:paulo-miguel-dias/pkppa -y && sudo apt update -y && sudo apt install libgles1-mesa -y; sudo apt install libgles2-mesa -y && sudo add-apt-repository -y ppa:videolan/stable-daily && sudo apt update -y && sudo apt install vlc -y
-sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp && sudo apt update -y && sudo apt install gimp -y
 sudo add-apt-repository -y ppa:eugenesan/ppa && sudo apt update -y && sudo apt install keepassx -y
+sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp && sudo apt update -y && sudo apt install gimp -y
 sudo apt install gimp-data -y
 sudo apt install gimp-plugin-registry -y
 sudo apt install gimp-data-extras -y
@@ -90,7 +90,6 @@ sudo apt install bless -y
 sudo apt install tig -y
 sudo apt install curl -y
 sudo apt install colordiff -y
-sudo apt install ntop -y
 sudo apt install iotop -y
 sudo apt install htop -y
 sudo apt install nmap -y
