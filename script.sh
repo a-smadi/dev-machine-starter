@@ -35,7 +35,6 @@ sudo apt install faad -y
 sudo apt install sox -y
 sudo apt install ffmpeg2theora -y
 sudo apt install libmpeg2-4 -y
-sudo apt install uudeview -y
 sudo apt install mpeg3-utils -y
 sudo apt install mpegdemux -y
 sudo apt install liba52-dev -y
