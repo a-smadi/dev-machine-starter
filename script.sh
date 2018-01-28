@@ -79,6 +79,7 @@ sudo apt install unity-tweak-tool -y
 sudo apt install libxss1 -y; sudo apt install libappindicator1 -y; sudo apt install libindicator7 -y; sudo apt install -f; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb && sudo dpkg -i chrome.deb; rm chrome.deb
 wget https://repo.skype.com/latest/skypeforlinux-64.deb -O skype.deb && sudo dpkg -i skype.deb; rm skype.deb
 sudo apt install libav-tools -y
+git clone https://github.com/powerline/fonts.git ~/powerline-fonts && ~/powerline-fonts/install.sh && rm -rf ~/powerline-fonts
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
 sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update -y && sudo apt install oracle-java8-installer -y
