@@ -76,15 +76,15 @@ sudo apt install xcowsay -y
 sudo apt install cheese -y
 sudo apt install darktabke -y
 sudo apt install unity-tweak-tool -y
-sudo apt install libxss1 -y; sudo apt install libappindicator1 -y; sudo apt install libindicator7 -y; sudo apt install -f; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb && sudo dpkg -i chrome.deb; rm chrome.deb
-wget https://repo.skype.com/latest/skypeforlinux-64.deb -O skype.deb && sudo dpkg -i skype.deb; rm skype.deb
+sudo apt install libxss1 -y; sudo apt install libappindicator1 -y; sudo apt install libindicator7 -y; sudo apt install -f; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb && sudo dpkg -i chrome.deb; rm -f chrome.deb
+wget https://repo.skype.com/latest/skypeforlinux-64.deb -O skype.deb && sudo dpkg -i skype.deb; rm -f skype.deb
 sudo apt install libav-tools -y
 git clone https://github.com/powerline/fonts.git ~/powerline-fonts && ~/powerline-fonts/install.sh && rm -rf ~/powerline-fonts
 sudo apt install smartmontools -y
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
 sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update -y && sudo apt install oracle-java8-installer -y
-wget http://aprelium.com/data/abwsx1.tgz -O abwsx1.tgz && tar -xf abwsx1.tgz -C ~/; rm abwsx1.tgz && sudo mv ~/abyssws /opt/ && sudo ln -s /opt/abyssws/abyssws /usr/local/bin/abyssws && chmod +x /usr/local/bin/abyssws
+wget http://aprelium.com/data/abwsx1.tgz -O abwsx1.tgz && tar -xf abwsx1.tgz -C ~/; rm -f abwsx1.tgz && sudo mv ~/abyssws /opt/ && sudo ln -s /opt/abyssws/abyssws /usr/local/bin/abyssws && chmod +x /usr/local/bin/abyssws
 sudo apt install git -y
 sudo apt install redis-server -y
 sudo apt install screenruler -y
@@ -98,7 +98,7 @@ sudo apt install nmap -y
 sudo apt install wireshark -y
 sudo apt install g++ -y
 sudo apt install xdotool -y
-wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz -O noip.tar.gz && tar xf noip.tar.gz && sudo mv noip-*/binaries/noip2-x86_64 /usr/local/bin/noip2; chmod +x /usr/local/bin/noip2; rm -rf noip-*; rm noip.tar.gz
+wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz -O noip.tar.gz && tar xf noip.tar.gz && sudo mv noip-*/binaries/noip2-x86_64 /usr/local/bin/noip2; chmod +x /usr/local/bin/noip2; rm -rf noip-*; rm -f noip.tar.gz
 sudo apt install vim -y
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 sudo apt install tmux -y
@@ -108,7 +108,7 @@ sudo apt install links2 -y
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' && wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add - && sudo apt update -y && sudo apt install postgresql -y && sudo apt install postgresql-contrib -y
 sudo apt install nodejs -y
 wget https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 -O cc-test-reporter && chmod +x cc-test-reporter && sudo mv cc-test-reporter /usr/local/bin/
-wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O ngrok.zip && unzip ngrok.zip && rm ngrok.zip -f && sudo mv ngrok /usr/local/bin/
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O ngrok.zip && unzip ngrok.zip && rm -f ngrok.zip && sudo mv ngrok /usr/local/bin/
 sudo apt install autoconf -y; sudo apt install bison -y; sudo apt install build-essential -y; sudo apt install libssl-dev -y; sudo apt install libyaml-dev -y; sudo apt install libreadline6-dev -y; sudo apt install zlib1g-dev -y; sudo apt install libncurses5-dev -y; sudo apt install libffi-dev -y; sudo apt install libgdbm3 -y; sudo apt install libgdbm-dev -y; sudo rm -rf ~/.rbenv && git clone https://github.com/rbenv/rbenv.git ~/.rbenv && echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc && echo 'eval "$(rbenv init -)"' >> ~/.bashrc && source ~/.bashrc
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 $HOME/.rbenv/bin/rbenv install 2.4.1 && $HOME/.rbenv/bin/rbenv global 2.4.1 && $HOME/.rbenv/bin/rbenv rehash && sudo apt install libpq-dev -y
