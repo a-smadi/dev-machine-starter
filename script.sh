@@ -62,7 +62,7 @@ sudo apt install whois -y
 
 echo -e "${RED}installing favorites...${NOCOLOR}"
 sudo apt install gparted -y
-sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && chmod a+x /usr/local/bin/youtube-dl && hash -r -y
+sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && sudo chmod +x /usr/local/bin/youtube-dl && hash -r -y
 sudo add-apt-repository ppa:paulo-miguel-dias/pkppa -y && sudo apt update -y && sudo apt install libgles1-mesa -y; sudo apt install libgles2-mesa -y && sudo add-apt-repository -y ppa:videolan/stable-daily && sudo apt update -y && sudo apt install vlc -y
 sudo add-apt-repository -y ppa:eugenesan/ppa && sudo apt update -y && sudo apt install keepassx -y
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp && sudo apt update -y && sudo apt install gimp -y
