@@ -40,7 +40,7 @@ sudo apt install vorbis-tools -y
 sudo apt install id3v2 -y
 sudo apt install mpg321 -y
 sudo apt install mpg123 -y
-sudo apt install libflac++6 -y
+sudo apt install libflac++6v5 -y
 sudo apt install totem-mozilla -y
 sudo apt install icedax -y
 sudo apt install lame -y
