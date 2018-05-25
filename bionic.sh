@@ -1,9 +1,6 @@
 RED='\033[0;31m'
 NOCOLOR='\033[0m'
 
-sudo echo -e "${RED}altering initial preferences...${NOCOLOR}"
-gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
-
 echo -e "${RED}removing unwanted software...${NOCOLOR}"
 sudo apt purge -y thunderbird
 
@@ -59,12 +56,15 @@ sudo apt install xbacklight -y
 sudo apt install gstreamer1.0-libav -y
 sudo apt install ffmpeg -y
 sudo apt install whois -y
+sudo apt install net-tools -y
+sudo apt install policykit-1 -y; sudo apt install policykit-1-gnome -y
+sudo apt install git -y
 
 echo -e "${RED}installing favorites...${NOCOLOR}"
 sudo apt install gparted -y
 sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && sudo chmod +x /usr/local/bin/youtube-dl && hash -r -y
-sudo add-apt-repository ppa:paulo-miguel-dias/pkppa -y && sudo apt update -y && sudo apt install libgles1-mesa -y; sudo apt install libgles2-mesa -y && sudo add-apt-repository -y ppa:videolan/stable-daily && sudo apt update -y && sudo apt install vlc -y
-sudo add-apt-repository -y ppa:eugenesan/ppa && sudo apt update -y && sudo apt install keepassx -y
+sudo apt install vlc -y
+sudo apt install keepassx -y
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp && sudo apt update -y && sudo apt install gimp -y
 sudo apt install gimp-data -y
 sudo apt install gimp-plugin-registry -y
@@ -75,17 +75,15 @@ sudo apt install figlet -y
 sudo apt install xcowsay -y
 sudo apt install cheese -y
 sudo apt install darktabke -y
-sudo apt install unity-tweak-tool -y
 sudo apt install libxss1 -y; sudo apt install libappindicator1 -y; sudo apt install libindicator7 -y; sudo apt install -f; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb && sudo dpkg -i chrome.deb; rm -f chrome.deb
 wget https://repo.skype.com/latest/skypeforlinux-64.deb -O skype.deb && sudo dpkg -i skype.deb; rm -f skype.deb
-sudo apt install libav-tools -y
 git clone https://github.com/powerline/fonts.git ~/powerline-fonts && ~/powerline-fonts/install.sh && rm -rf ~/powerline-fonts
 sudo apt install smartmontools -y
+sudo apt install gucharmap -y
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
 sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update -y && sudo apt install oracle-java8-installer -y
 wget http://aprelium.com/data/abwsx1.tgz -O abwsx1.tgz && tar -xf abwsx1.tgz -C ~/; rm -f abwsx1.tgz && sudo mv ~/abyssws /opt/ && sudo ln -s /opt/abyssws/abyssws /usr/local/bin/abyssws && chmod +x /usr/local/bin/abyssws
-sudo apt install git -y
 sudo apt install redis-server -y
 sudo apt install screenruler -y
 sudo apt install bless -y
