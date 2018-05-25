@@ -60,7 +60,7 @@ sudo apt install git -y
 
 echo -e "${RED}installing favorites...${NOCOLOR}"
 sudo apt install gparted -y
-sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && sudo chmod +x /usr/local/bin/youtube-dl && hash -r -y
+sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl && sudo chmod +x /usr/local/bin/youtube-dl && hash -r
 sudo apt install vlc -y
 sudo apt install keepassx -y
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp && sudo apt update -y && sudo apt install gimp -y
