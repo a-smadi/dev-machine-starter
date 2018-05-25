@@ -117,7 +117,7 @@ $HOME/.rbenv/shims/gem install rubocop
 echo -e "${RED}cleaning up...${NOCOLOR}"
 sudo apt -f install -y
 sudo apt autoremove -y
-sudo apt -y autoclean -y
-sudo apt -y clean
+sudo apt autoclean -y
+sudo apt clean -y
 
 echo -e "${RED}all good !${NOCOLOR}"
