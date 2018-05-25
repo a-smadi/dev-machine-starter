@@ -112,8 +112,6 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip -O ngrok.
 sudo apt install autoconf -y; sudo apt install bison -y; sudo apt install build-essential -y; sudo apt install libssl-dev -y; sudo apt install libyaml-dev -y; sudo apt install libreadline6-dev -y; sudo apt install zlib1g-dev -y; sudo apt install libncurses5-dev -y; sudo apt install libffi-dev -y; sudo apt install libgdbm3 -y; sudo apt install libgdbm-dev -y; sudo rm -rf ~/.rbenv && git clone https://github.com/rbenv/rbenv.git ~/.rbenv && echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc && echo 'eval "$(rbenv init -)"' >> ~/.bashrc && source ~/.bashrc
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 $HOME/.rbenv/bin/rbenv install 2.4.1 && $HOME/.rbenv/bin/rbenv global 2.4.1 && $HOME/.rbenv/bin/rbenv rehash && sudo apt install libpq-dev -y
-
-echo -e "${RED}installing gems...${NOCOLOR}"
 $HOME/.rbenv/shims/gem install bundler
 $HOME/.rbenv/shims/gem install rails
 $HOME/.rbenv/shims/gem install rspec
