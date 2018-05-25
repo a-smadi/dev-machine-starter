@@ -48,7 +48,6 @@ sudo apt install libjpeg-progs -y
 sudo apt install libdvdcss2 -y
 sudo apt install libdvdread4 -y
 sudo apt install libdvdnav4 -y
-sudo apt install libswscale-extra-2 -y
 sudo apt install ubuntu-restricted-extras -y
 sudo apt install lm-sensors -y
 sudo apt install xbacklight -y
