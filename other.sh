@@ -82,6 +82,7 @@ wget https://repo.skype.com/latest/skypeforlinux-64.deb -O skype.deb && sudo dpk
 sudo apt install libav-tools -y
 git clone https://github.com/powerline/fonts.git ~/powerline-fonts && ~/powerline-fonts/install.sh && rm -rf ~/powerline-fonts
 sudo apt install smartmontools -y
+sudo apt install openssh-server -y && sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.factory-defaults && sudo chmod a-w /etc/ssh/sshd_config.factory-defaults && sudo systemctl restart ssh
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
 sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update -y && sudo apt install oracle-java8-installer -y
