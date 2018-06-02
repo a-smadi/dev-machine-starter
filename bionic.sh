@@ -94,6 +94,7 @@ sudo apt install nmap -y
 sudo apt install wireshark -y
 sudo apt install g++ -y
 sudo apt install xdotool -y
+sudo apt install wmctrl -y
 wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz -O noip.tar.gz && tar xf noip.tar.gz && sudo mv noip-*/binaries/noip2-x86_64 /usr/local/bin/noip2; chmod +x /usr/local/bin/noip2; rm -rf noip-*; rm -f noip.tar.gz
 sudo apt install vim -y
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
