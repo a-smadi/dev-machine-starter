@@ -78,6 +78,7 @@ git clone https://github.com/powerline/fonts.git ~/powerline-fonts && ~/powerlin
 sudo apt install smartmontools -y
 sudo apt install gucharmap -y
 sudo apt install openssh-server -y && sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.factory-defaults && sudo chmod a-w /etc/ssh/sshd_config.factory-defaults && sudo systemctl restart ssh
+sudo apt install pv -y
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
 sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update -y && sudo apt install oracle-java8-installer -y
