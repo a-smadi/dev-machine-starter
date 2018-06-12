@@ -83,7 +83,7 @@ sudo apt install pv -y
 echo -e "${RED}installing development tools...${NOCOLOR}"
 sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update -y && sudo apt install oracle-java8-installer -y
 wget http://aprelium.com/data/abwsx1.tgz -O abwsx1.tgz && tar -xf abwsx1.tgz -C ~/; rm -f abwsx1.tgz && sudo mv ~/abyssws /opt/ && sudo ln -s /opt/abyssws/abyssws /usr/local/bin/abyssws && chmod +x /usr/local/bin/abyssws
-sudo apt install redis-server -y && systemctl disable redis-server
+sudo apt install redis-server -y && sudo systemctl disable redis-server
 sudo apt install screenruler -y
 sudo apt install bless -y
 sudo apt install tig -y
