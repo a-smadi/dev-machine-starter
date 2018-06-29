@@ -116,6 +116,7 @@ $HOME/.rbenv/shims/gem install bundler
 $HOME/.rbenv/shims/gem install rails
 $HOME/.rbenv/shims/gem install rspec
 $HOME/.rbenv/shims/gem install rubocop
+$HOME/.rbenv/shims/gem install i18n-magic
 
 echo -e "${RED}cleaning up...${NOCOLOR}"
 sudo apt -f install -y
