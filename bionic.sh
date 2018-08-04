@@ -70,6 +70,7 @@ sudo apt install gimp-data-extras -y
 sudo apt install testdisk -y
 sudo apt install audacity -y
 sudo apt install figlet -y
+sudo apt install cowsay -y
 sudo apt install xcowsay -y
 sudo apt install cheese -y
 sudo apt install libxss1 -y; sudo apt install libappindicator1 -y; sudo apt install libindicator7 -y; sudo apt install -f; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb && sudo dpkg -i chrome.deb; rm -f chrome.deb

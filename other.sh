@@ -73,6 +73,7 @@ sudo apt install gimp-data-extras -y
 sudo apt install testdisk -y
 sudo apt install audacity -y
 sudo apt install figlet -y
+sudo apt install cowsay -y
 sudo apt install xcowsay -y
 sudo apt install cheese -y
 sudo apt install darktable -y
