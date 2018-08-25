@@ -84,6 +84,7 @@ sudo apt install pavucontrol -y
 sudo apt install kodi -y
 sudo apt install powertop -y
 sudo apt install gnome-tweaks -y
+sudo apt install gnome-weather -y
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
 sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update -y && sudo apt install oracle-java8-installer -y
