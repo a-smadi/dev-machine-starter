@@ -87,6 +87,7 @@ sudo apt install openssh-server -y && sudo cp /etc/ssh/sshd_config /etc/ssh/sshd
 sudo apt install pv -y
 sudo apt install pavucontrol -y
 sudo apt install powertop -y
+sudo apt install gnome-tweaks -y
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
 sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update -y && sudo apt install oracle-java8-installer -y
