@@ -60,9 +60,6 @@ sudo apt install libjpeg-progs -y
 # Ubuntu Restricted Extras
 sudo apt install ubuntu-restricted-extras -y
 
-# lm_sensors
-sudo apt install lm-sensors -y
-
 # xbacklight
 sudo apt install xbacklight -y
 
@@ -225,6 +222,10 @@ sudo apt install gnome-tweaks -y
 
 # Weather
 sudo apt install gnome-weather -y
+
+# lm_sensors
+sudo apt install lm-sensors -y
+
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
 # JDK 8
