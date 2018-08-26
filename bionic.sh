@@ -63,9 +63,6 @@ sudo apt install ubuntu-restricted-extras -y
 # xbacklight
 sudo apt install xbacklight -y
 
-# WHOis
-sudo apt install whois -y
-
 # net-tools
 sudo apt install net-tools -y
 
@@ -225,6 +222,9 @@ sudo apt install gnome-weather -y
 
 # lm_sensors
 sudo apt install lm-sensors -y
+
+# WHOis
+sudo apt install whois -y
 
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
