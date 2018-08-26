@@ -336,10 +336,12 @@ $HOME/.rbenv/shims/gem install rubocop
 # i18n-magic
 $HOME/.rbenv/shims/gem install i18n-magic
 
+
 echo -e "${RED}cleaning up...${NOCOLOR}"
 sudo apt -f install -y
 sudo apt autoremove -y
 sudo apt autoclean -y
 sudo apt clean -y
+
 
 echo -e "${RED}all good !${NOCOLOR}"
