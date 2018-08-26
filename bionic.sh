@@ -54,6 +54,32 @@ sudo apt install cabextract -y
 # file-roller
 sudo apt install file-roller -y
 
+# libjpeg-progs
+sudo apt install libjpeg-progs -y
+
+# Ubuntu Restricted Extras
+sudo apt install ubuntu-restricted-extras -y
+
+# lm_sensors
+sudo apt install lm-sensors -y
+
+# xbacklight
+sudo apt install xbacklight -y
+
+# WHOis
+sudo apt install whois -y
+
+# net-tools
+sudo apt install net-tools -y
+
+# Polkit
+sudo apt install policykit-1 -y; sudo apt install policykit-1-gnome -y
+
+# Git
+sudo apt install git -y
+
+
+echo -e "${RED}installing multimedia essentials...${NOCOLOR}"
 # MEncoder
 sudo apt install mencoder -y
 
@@ -111,9 +137,6 @@ sudo apt install lame -y
 # libmad0
 sudo apt install libmad0 -y
 
-# libjpeg-progs
-sudo apt install libjpeg-progs -y
-
 # libdvdcss2
 sudo apt install libdvdcss2 -y
 
@@ -123,32 +146,11 @@ sudo apt install libdvdread4 -y
 # libdvdnav4
 sudo apt install libdvdnav4 -y
 
-# Ubuntu Restricted Extras
-sudo apt install ubuntu-restricted-extras -y
-
-# lm_sensors
-sudo apt install lm-sensors -y
-
-# xbacklight
-sudo apt install xbacklight -y
-
 # gstreamer1.0-libav
 sudo apt install gstreamer1.0-libav -y
 
 # FFmpeg
 sudo apt install ffmpeg -y
-
-# WHOis
-sudo apt install whois -y
-
-# net-tools
-sudo apt install net-tools -y
-
-# Polkit
-sudo apt install policykit-1 -y; sudo apt install policykit-1-gnome -y
-
-# Git
-sudo apt install git -y
 
 
 echo -e "${RED}installing favorites...${NOCOLOR}"
