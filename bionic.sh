@@ -276,9 +276,6 @@ sudo apt install wmctrl -y
 # No-IP Dynamic DNS Update Client
 wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz -O noip.tar.gz && tar xf noip.tar.gz && sudo mv noip-*/binaries/noip2-x86_64 /usr/local/bin/noip2; chmod +x /usr/local/bin/noip2; rm -rf noip-*; rm -f noip.tar.gz
 
-# Sublime Text
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - && sudo apt install apt-transport-https -y && echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list && sudo apt update -y && sudo apt install sublime-text -y
-
 # Vim
 sudo apt remove vim -y && sudo apt remove vim.tiny -y && sudo apt remove vim.gtk3 -y && sudo apt install vim-nox -y && sudo apt install vim-gtk -y && sudo apt install vim-rails -y
 
