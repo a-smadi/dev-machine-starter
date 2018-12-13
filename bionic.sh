@@ -315,8 +315,8 @@ sudo apt install autoconf -y; sudo apt install bison -y; sudo apt install build-
 # ruby-build
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
-# Ruby 2.4.1
-$HOME/.rbenv/bin/rbenv install 2.4.1 && $HOME/.rbenv/bin/rbenv global 2.4.1 && $HOME/.rbenv/bin/rbenv rehash && sudo apt install libpq-dev -y
+# Ruby 2.3.7
+sudo apt install libssl1.0.0 -y && $HOME/.rbenv/bin/rbenv install 2.3.7 && $HOME/.rbenv/bin/rbenv global 2.3.7 && $HOME/.rbenv/bin/rbenv rehash && sudo apt install libpq-dev -y
 
 # Bundler
 $HOME/.rbenv/shims/gem install bundler
