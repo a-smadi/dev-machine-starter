@@ -309,6 +309,9 @@ sudo apt install exuberant-ctags -y
 # Ack
 sudo apt install ack -y
 
+# qt5 - to support capybara
+sudo apt-get install qt5-default -y && sudo apt install libqt5webkit5-dev -y && sudo apt install gstreamer1.0-plugins-base -y && sudo apt install gstreamer1.0-tools -y && sudo apt install gstreamer1.0-x -y
+
 # rbenv
 sudo apt install autoconf -y; sudo apt install bison -y; sudo apt install build-essential -y; sudo apt install libssl-dev -y; sudo apt install libyaml-dev -y; sudo apt install libreadline6-dev -y; sudo apt install zlib1g-dev -y; sudo apt install libncurses5-dev -y; sudo apt install libffi-dev -y; sudo apt install libgdbm3 -y; sudo apt install libgdbm-dev -y; sudo rm -rf ~/.rbenv && git clone https://github.com/rbenv/rbenv.git ~/.rbenv && echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc && echo 'eval "$(rbenv init -)"' >> ~/.bashrc && source ~/.bashrc
 
