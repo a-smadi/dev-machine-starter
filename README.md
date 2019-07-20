@@ -14,3 +14,23 @@ The script works perfectly for Ubuntu 16.04/18.04 LTS, and can be easily run as 
 chmod +x setup.sh bionic.sh other.sh
 ./setup.sh
 ```
+
+## To be added
+
+*ipgeo
+*Tor
+*vln
+*Slack
+*FileZilla
+*Virtualbox
+*Teamviewer
+*appentry
+*SoapUI
+*Crark7z
+*CrarkRAR
+*disable-touch-screen.sh
+*Elasticsearch
+*Kibana
+*ecm
+*unecm
+*latest nodejs
