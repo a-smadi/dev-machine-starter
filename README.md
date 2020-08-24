@@ -1,6 +1,6 @@
-# ubuntu-kickstarter
+# dev-machine-starter
 
-A script to help get things up and running for a fresh installation of Ubuntu.
+A script to help get things up and running for a fresh installation of my Linux or macOS machines.
 
 ## About
 
@@ -8,10 +8,9 @@ This script was written with my specific requirements in mind, to help setup my 
 
 ## Running the script
 
-The script works perfectly for Ubuntu 16.04/18.04 LTS, and can be easily run as such:
+The script works perfectly for Ubuntu 16.04/18.04 LTS as well as macOS Catalina, and can be easily run as such:
 
 ```
-chmod +x setup.sh bionic.sh other.sh
 ./setup.sh
 ```
 

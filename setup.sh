@@ -1,5 +1,9 @@
-if [[ "$(lsb_release -r)" = *"18.04"* ]]; then
-  ./bionic.sh
+if [[ "$(uname -s)" = *"Darwin"* ]]; then
+  ./osx.sh
 else
-  ./other.sh
+  if [[ "$(lsb_release -r)" = *"18.04"* ]]; then
+    ./bionic.sh
+  else
+    ./other.sh
+  fi
 fi
