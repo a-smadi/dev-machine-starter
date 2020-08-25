@@ -13,39 +13,6 @@ echo "${RED}installing multimedia essentials...${NOCOLOR}"
 brew install ffmpeg
 
 
-echo "${RED}installing favorites...${NOCOLOR}"
-
-# Google Chrome
-brew cask install google-chrome
-
-# youtube-dl
-brew install youtube-dl
-
-# LibreOffice
-brew cask install libreoffice
-
-# VLC
-brew cask install vlc
-
-# KeePassX
-brew cask install keepassx
-
-# GIMP
-brew cask install gimp
-
-# PhotoRec / TestDisk
-brew install testdisk
-
-# FIGlet
-brew install figlet
-
-# VirtualBox
-brew cask install virtualbox
-
-# Powerline Fonts
-git clone https://github.com/powerline/fonts.git ~/powerline-fonts && ~/powerline-fonts/install.sh && rm -rf ~/powerline-fonts
-
-
 echo "${RED}installing development tools...${NOCOLOR}"
 
 # Postman
@@ -119,6 +86,45 @@ $HOME/.rbenv/shims/gem install rspec
 
 # RuboCop
 $HOME/.rbenv/shims/gem install rubocop
+
+
+echo "${RED}installing favorites...${NOCOLOR}"
+
+# Google Chrome
+brew cask install google-chrome
+
+# youtube-dl
+brew install youtube-dl
+
+# LibreOffice
+brew cask install libreoffice
+
+# VLC
+brew cask install vlc
+
+# KeePassX
+brew cask install keepassx
+
+# GIMP
+brew cask install gimp
+
+# PhotoRec / TestDisk
+brew install testdisk
+
+# FIGlet
+brew install figlet
+
+# VirtualBox
+brew cask install virtualbox
+
+# Powerline Fonts
+git clone https://github.com/powerline/fonts.git ~/powerline-fonts && ~/powerline-fonts/install.sh && rm -rf ~/powerline-fonts
+
+# iStats
+$HOME/.rbenv/shims/gem install iStats
+
+# wget
+brew install wget
 
 
 echo "${RED}all good !${NOCOLOR}"
