@@ -48,6 +48,9 @@ git clone https://github.com/powerline/fonts.git ~/powerline-fonts && ~/powerlin
 
 echo "${RED}installing development tools...${NOCOLOR}"
 
+# Postman
+brew cask install postman
+
 # Java
 brew cask install java
 
