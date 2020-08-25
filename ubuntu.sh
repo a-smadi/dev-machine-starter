@@ -175,20 +175,11 @@ sudo apt install audacity -y
 # FIGlet
 sudo apt install figlet -y
 
-# cowsay
-sudo apt install cowsay -y
-
-# xcowsay
-sudo apt install xcowsay -y
-
 # Cheese
 sudo apt install cheese -y
 
 # Google Chrome
 sudo apt install libxss1 -y; sudo apt install libappindicator1 -y; sudo apt install libindicator7 -y; sudo apt install -f; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb && sudo dpkg -i chrome.deb; rm -f chrome.deb
-
-# Skype
-wget https://repo.skype.com/latest/skypeforlinux-64.deb -O skype.deb && sudo dpkg -i skype.deb; rm -f skype.deb
 
 # Powerline Fonts
 git clone https://github.com/powerline/fonts.git ~/powerline-fonts && ~/powerline-fonts/install.sh && rm -rf ~/powerline-fonts
@@ -332,10 +323,6 @@ $HOME/.rbenv/shims/gem install rspec
 
 # RuboCop
 $HOME/.rbenv/shims/gem install rubocop
-
-# i18n-magic
-$HOME/.rbenv/shims/gem install i18n-magic
-
 
 echo -e "${RED}cleaning up...${NOCOLOR}"
 sudo apt -f install -y
