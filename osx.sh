@@ -126,5 +126,8 @@ $HOME/.rbenv/shims/gem install iStats
 # wget
 brew install wget
 
+# watch
+brew install watch
+
 
 echo "${RED}all good !${NOCOLOR}"
