@@ -60,9 +60,6 @@ sudo apt install libjpeg-progs -y
 # Ubuntu Restricted Extras
 sudo apt install ubuntu-restricted-extras -y
 
-# xbacklight
-sudo apt install xbacklight -y
-
 # net-tools
 sudo apt install net-tools -y
 
@@ -134,9 +131,6 @@ sudo apt install libmad0 -y
 # libdvdcss2
 sudo apt install libdvdcss2 -y
 
-# libdvdread4
-sudo apt install libdvdread4 -y
-
 # libdvdnav4
 sudo apt install libdvdnav4 -y
 
@@ -161,10 +155,7 @@ sudo apt install vlc -y
 sudo apt install keepassx -y
 
 # GIMP
-sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp && sudo apt update -y && sudo apt install gimp -y
-
-# GIMP Plugins
-sudo apt install gimp-data -y && sudo apt install gimp-plugin-registry -y && sudo apt install gimp-data-extras -y
+sudo add-apt-repository -y ppa:ubuntuhandbook1/gimp && sudo apt update && sudo apt install gimp gimp-gmic -y
 
 # PhotoRec + TestDisk
 sudo apt install testdisk -y
@@ -199,17 +190,11 @@ sudo apt install pv -y
 # PulseAudio Volume Control
 sudo apt install pavucontrol -y
 
-# Kodi
-sudo apt install kodi -y
-
 # PowerTOP
 sudo apt install powertop -y
 
 # GNOME Tweaks
 sudo apt install gnome-tweaks -y
-
-# Weather
-sudo apt install gnome-weather -y
 
 # lm_sensors
 sudo apt install lm-sensors -y
@@ -219,6 +204,9 @@ sudo apt install whois -y
 
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
+# vim
+sudo apt install vim -y
+
 # JDK 8
 sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update -y && sudo apt install oracle-java8-installer -y
 
