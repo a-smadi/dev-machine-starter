@@ -21,15 +21,14 @@ The script works perfectly for Ubuntu 20.04 LTS as well as macOS Mojave/Catalina
 *vln
 *Slack
 *FileZilla
-*Virtualbox
+*Virtualbox on Ubuntu
 *Teamviewer
 *appentry
 *SoapUI
 *Crark7z
 *CrarkRAR
 *disable-touch-screen.sh
-*Elasticsearch
 *Kibana
 *ecm
 *unecm
-*latest nodejs
+*code climate reporting tool on osx
