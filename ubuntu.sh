@@ -204,14 +204,17 @@ sudo apt install whois -y
 
 
 echo -e "${RED}installing development tools...${NOCOLOR}"
-# vim
-sudo apt install vim -y
+# Vim
+sudo apt remove vim -y && sudo apt install vim-nox -y && sudo apt install vim-gtk -y && sudo apt install vim-rails -y
 
-# JDK 8
-sudo add-apt-repository -y ppa:webupd8team/java && sudo apt update -y && sudo apt install oracle-java8-installer -y
+# Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-# Abyss Web Server
-wget http://aprelium.com/data/abwsx1.tgz -O abwsx1.tgz && tar -xf abwsx1.tgz -C ~/; rm -f abwsx1.tgz && sudo mv ~/abyssws /opt/ && sudo ln -s /opt/abyssws/abyssws /usr/local/bin/abyssws && chmod +x /usr/local/bin/abyssws
+# tmux
+sudo apt install tmux -y
+
+# Tmux Plugin Manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # Redis
 sudo apt install redis-server -y && sudo systemctl disable redis-server
@@ -255,23 +258,8 @@ sudo apt install wmctrl -y
 # No-IP Dynamic DNS Update Client
 wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz -O noip.tar.gz && tar xf noip.tar.gz && sudo mv noip-*/binaries/noip2-x86_64 /usr/local/bin/noip2; chmod +x /usr/local/bin/noip2; rm -rf noip-*; rm -f noip.tar.gz
 
-# Vim
-sudo apt remove vim -y && sudo apt remove vim.tiny -y && sudo apt remove vim.gtk3 -y && sudo apt install vim-nox -y && sudo apt install vim-gtk -y && sudo apt install vim-rails -y
-
-# Vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-# tmux
-sudo apt install tmux -y
-
-# Tmux Plugin Manager
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-
 # links2
 sudo apt install links2 -y
-
-# PostgreSQL
-sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' && wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add - && sudo apt update -y && sudo apt install postgresql -y && sudo apt install postgresql-contrib -y
 
 # Node.js
 sudo apt install nodejs -y
@@ -288,6 +276,12 @@ sudo apt install exuberant-ctags -y
 # Ack
 sudo apt install ack -y
 
+# JDK 8
+sudo apt install default-jdk -y
+
+# PostgreSQL
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' && wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add - && sudo apt update -y && sudo apt install postgresql -y && sudo apt install postgresql-contrib -y
+
 # qt5 - to support capybara
 sudo apt-get install qt5-default -y && sudo apt install libqt5webkit5-dev -y && sudo apt install gstreamer1.0-plugins-base -y && sudo apt install gstreamer1.0-tools -y && sudo apt install gstreamer1.0-x -y
 
@@ -297,20 +291,17 @@ sudo apt install autoconf -y; sudo apt install bison -y; sudo apt install build-
 # ruby-build
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
-# Ruby 2.3.7
-sudo apt install libssl1.0.0 -y && $HOME/.rbenv/bin/rbenv install 2.3.7 && $HOME/.rbenv/bin/rbenv global 2.3.7 && $HOME/.rbenv/bin/rbenv rehash && sudo apt install libpq-dev -y
+# Ruby 2.7.1
+sudo apt install libssl1.1 -y && $HOME/.rbenv/bin/rbenv install 2.7.1 && $HOME/.rbenv/bin/rbenv global 2.7.1 && $HOME/.rbenv/bin/rbenv rehash && sudo apt install libpq-dev -y
 
 # Bundler
 $HOME/.rbenv/shims/gem install bundler
 
-# Rails
-$HOME/.rbenv/shims/gem install rails
-
-# RSpec
-$HOME/.rbenv/shims/gem install rspec
-
 # RuboCop
 $HOME/.rbenv/shims/gem install rubocop
+
+# Rails
+$HOME/.rbenv/shims/gem install rails
 
 echo -e "${RED}cleaning up...${NOCOLOR}"
 sudo apt -f install -y
