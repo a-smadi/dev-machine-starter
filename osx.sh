@@ -72,20 +72,17 @@ brew install rbenv
 # ruby-build
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
-# Ruby
+# Ruby 2.7.1
 rbenv install 2.7.1 && rbenv global 2.7.1 && rbenv rehash
 
 # Bundler
 $HOME/.rbenv/shims/gem install bundler
 
-# Rails
-$HOME/.rbenv/shims/gem install rails
-
-# RSpec
-$HOME/.rbenv/shims/gem install rspec
-
 # RuboCop
 $HOME/.rbenv/shims/gem install rubocop
+
+# Rails
+$HOME/.rbenv/shims/gem install rails
 
 
 echo "${RED}installing favorites...${NOCOLOR}"
