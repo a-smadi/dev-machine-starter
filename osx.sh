@@ -2,19 +2,16 @@ RED='\033[0;31m'
 NOCOLOR='\033[0m'
 
 echo "${RED}installing essentials...${NOCOLOR}"
-
 # Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 
 echo "${RED}installing multimedia essentials...${NOCOLOR}"
-
 # ffmpeg
 brew install ffmpeg
 
 
 echo "${RED}installing development tools...${NOCOLOR}"
-
 # Postman
 brew cask install postman
 
@@ -86,7 +83,6 @@ $HOME/.rbenv/shims/gem install rails
 
 
 echo "${RED}installing favorites...${NOCOLOR}"
-
 # Google Chrome
 brew cask install google-chrome
 
