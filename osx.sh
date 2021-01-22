@@ -122,5 +122,7 @@ brew install wget
 # watch
 brew install watch
 
+# speedtest
+brew tap teamookla/speedtest && brew update && brew install speedtest --force
 
 echo "${RED}all good !${NOCOLOR}"
