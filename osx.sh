@@ -63,6 +63,9 @@ brew cask install ngrok
 # Ack
 brew install ack
 
+# MySQL
+brew install mysql
+
 # rbenv
 brew install rbenv
 
