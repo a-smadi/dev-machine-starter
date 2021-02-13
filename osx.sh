@@ -18,9 +18,6 @@ brew cask install postman
 # Java
 brew cask install java
 
-# iTerm2
-brew cask install iterm2
-
 # Sublime
 brew cask install sublime-text
 
