@@ -12,17 +12,20 @@ brew install ffmpeg
 
 
 echo "${RED}installing development tools...${NOCOLOR}"
+# ITerm2
+brew install --cask iterm2
+
 # Postman
-brew cask install postman
+brew install --cask postman
 
 # Java
-brew cask install java
+brew install --cask java
 
 # Sublime
-brew cask install sublime-text
+brew install --cask sublime-text
 
 # 0xed
-brew cask install 0xed
+brew install --cask 0xed
 
 # Redis
 brew install redis
@@ -55,7 +58,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 brew install node
 
 # ngrok
-brew cask install ngrok
+brew install --cask ngrok
 
 # Ack
 brew install ack
@@ -84,22 +87,22 @@ $HOME/.rbenv/shims/gem install rails
 
 echo "${RED}installing favorites...${NOCOLOR}"
 # Google Chrome
-brew cask install google-chrome
+brew install --cask google-chrome
 
 # youtube-dl
 brew install youtube-dl
 
 # LibreOffice
-brew cask install libreoffice
+brew install --cask libreoffice
 
 # VLC
-brew cask install vlc
+brew install --cask vlc
 
 # KeePassX
-brew cask install keepassx
+brew install --cask keepassx
 
 # GIMP
-brew cask install gimp
+brew install --cask gimp
 
 # PhotoRec / TestDisk
 brew install testdisk
@@ -108,7 +111,7 @@ brew install testdisk
 brew install figlet
 
 # VirtualBox
-brew cask install virtualbox
+brew install --cask virtualbox
 
 # Powerline Fonts
 git clone https://github.com/powerline/fonts.git ~/powerline-fonts && ~/powerline-fonts/install.sh && rm -rf ~/powerline-fonts
