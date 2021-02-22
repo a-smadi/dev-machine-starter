@@ -110,9 +110,6 @@ brew install testdisk
 # FIGlet
 brew install figlet
 
-# VirtualBox
-brew install --cask virtualbox
-
 # Powerline Fonts
 git clone https://github.com/powerline/fonts.git ~/powerline-fonts && ~/powerline-fonts/install.sh && rm -rf ~/powerline-fonts
 
