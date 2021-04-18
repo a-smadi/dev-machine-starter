@@ -1,6 +1,9 @@
 RED='\033[0;31m'
 NOCOLOR='\033[0m'
 
+# Setup
+alias apt='apt clean -y && apt'
+
 echo -e "${RED}removing unwanted software...${NOCOLOR}"
 sudo apt purge -y thunderbird
 
@@ -166,9 +169,6 @@ sudo apt install audacity -y
 # FIGlet
 sudo apt install figlet -y
 
-# Cheese
-sudo apt install cheese -y
-
 # Google Chrome
 sudo apt install libxss1 -y; sudo apt install libappindicator1 -y; sudo apt install libindicator7 -y; sudo apt install -f; wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O chrome.deb && sudo dpkg -i chrome.deb; rm -f chrome.deb
 
@@ -181,14 +181,8 @@ sudo apt install smartmontools -y
 # Character Map
 sudo apt install gucharmap -y
 
-# OpenSSH Server
-sudo apt install openssh-server -y && sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.factory-defaults && sudo chmod a-w /etc/ssh/sshd_config.factory-defaults && sudo systemctl restart ssh
-
 # pv
 sudo apt install pv -y
-
-# PulseAudio Volume Control
-sudo apt install pavucontrol -y
 
 # PowerTOP
 sudo apt install powertop -y
@@ -279,6 +273,9 @@ sudo apt install ack -y
 # JDK 8
 sudo apt install default-jdk -y
 
+# MySQL
+sudo apt install mysql-server
+
 # PostgreSQL
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list' && wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add - && sudo apt update -y && sudo apt install postgresql -y && sudo apt install postgresql-contrib -y
 
@@ -292,7 +289,7 @@ sudo apt install autoconf -y; sudo apt install bison -y; sudo apt install build-
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 
 # Ruby 2.7.1
-sudo apt install libssl1.1 -y && $HOME/.rbenv/bin/rbenv install 2.7.1 && $HOME/.rbenv/bin/rbenv global 2.7.1 && $HOME/.rbenv/bin/rbenv rehash && sudo apt install libpq-dev -y
+sudo apt install libssl1.1 -y && $HOME/.rbenv/bin/rbenv install 3.0.1 && $HOME/.rbenv/bin/rbenv global 3.0.1 && $HOME/.rbenv/bin/rbenv rehash && sudo apt install libpq-dev -y
 
 # Bundler
 $HOME/.rbenv/shims/gem install bundler
