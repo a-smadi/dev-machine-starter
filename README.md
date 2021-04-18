@@ -8,7 +8,7 @@ This script was written with my specific requirements in mind, to help setup my 
 
 ## Running the script
 
-The script works perfectly for Ubuntu 20.04 LTS as well as macOS Mojave/Catalina, and can be easily run as such:
+The script works perfectly for Ubuntu 20.04 LTS as well as macOS Catalina/BigSur, and can be easily run as such:
 
 ```
 ./setup.sh
